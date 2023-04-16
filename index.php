@@ -34,7 +34,7 @@
         $port = 3307;
 
         //Create connection since we changed the port num had to add it here
-        $connection = mysqli_connect($servername, $username, $password, $database, $port);
+        $connection = new mysqli($servername, $username, $password, $database, $port);
 
         //Check connection
         if ($connection->connect_error) {
